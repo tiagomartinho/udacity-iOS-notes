@@ -14,7 +14,7 @@ class NotesListViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     /// The notebook whose notes are being displayed
-    var notebook: Notebook!
+    var notebook: CoreDataNotebook!
     
     var fetchedResultsController : NSFetchedResultsController<Note>!
     

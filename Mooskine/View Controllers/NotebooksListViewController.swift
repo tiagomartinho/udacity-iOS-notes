@@ -16,7 +16,7 @@ class NotebooksListViewController: UIViewController, UITableViewDataSource{
     /// The `Notebook` objects being presented
     var dataController : DataController!
     
-    var fetchedResultsController : NSFetchedResultsController<Notebook>!
+    var fetchedResultsController : NSFetchedResultsController<CoreDataNotebook>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,7 +82,7 @@ class NotebooksListViewController: UIViewController, UITableViewDataSource{
     
     /// Adds a new notebook to the end of the `notebooks` array
     func addNotebook(name: String) {
-        let notebook = Notebook(context: dataController.viewContext)
+        let notebook = CoreDataNotebook(context: dataController.viewContext)
         notebook.name = name
         try? dataController.viewContext.save()
         updateEditButtonState()
@@ -98,7 +98,7 @@ class NotebooksListViewController: UIViewController, UITableViewDataSource{
     
     fileprivate func setupFetchedResultsController() {
         
-        let fetchRequest:NSFetchRequest<Notebook> = Notebook.fetchRequest()
+        let fetchRequest:NSFetchRequest<CoreDataNotebook> = CoreDataNotebook.fetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "creationDate", ascending: false)
         fetchRequest.sortDescriptors = [sortDescriptor]
         

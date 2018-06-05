@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-extension Notebook{
+extension CoreDataNotebook{
     public override func awakeFromInsert() {
         super.awakeFromInsert()
         creationDate = Date()
