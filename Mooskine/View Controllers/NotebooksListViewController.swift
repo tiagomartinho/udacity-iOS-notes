@@ -17,9 +17,13 @@ class NotebooksListViewController: UIViewController, UITableViewDataSource{
     var dataController : DataController!
     
     var fetchedResultsController : NSFetchedResultsController<CoreDataNotebook>!
-    
+
+    var presenter: NotebooksListPresenter!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        let repository = CoreDataNotebookRepository(dataController: dataController)
+        presenter = NotebooksListPresenter(repository: repository)
         navigationItem.titleView = UIImageView(image: #imageLiteral(resourceName: "toolbar-cow"))
         navigationItem.rightBarButtonItem = editButtonItem
         setupFetchedResultsController()
@@ -82,9 +86,7 @@ class NotebooksListViewController: UIViewController, UITableViewDataSource{
     
     /// Adds a new notebook to the end of the `notebooks` array
     func addNotebook(name: String) {
-        let notebook = CoreDataNotebook(context: dataController.viewContext)
-        notebook.name = name
-        try? dataController.viewContext.save()
+        presenter.add(notebookName: name)
         updateEditButtonState()
     }
     

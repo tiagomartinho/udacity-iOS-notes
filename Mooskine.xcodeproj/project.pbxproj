@@ -21,6 +21,7 @@
 		247F130E20C6F30F00D24497 /* NotebooksListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F130D20C6F30F00D24497 /* NotebooksListPresenter.swift */; };
 		247F131020C6F31E00D24497 /* NotebookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F130F20C6F31E00D24497 /* NotebookRepository.swift */; };
 		247F131220C6F32C00D24497 /* Notebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F131120C6F32C00D24497 /* Notebook.swift */; };
+		247F131620C6F3A900D24497 /* CoreDataNotebookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F131520C6F3A900D24497 /* CoreDataNotebookRepository.swift */; };
 		30802F6F20C306BC009835A1 /* Mooskine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30802F6D20C306BC009835A1 /* Mooskine.xcdatamodeld */; };
 		30802F7120C3139B009835A1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30802F7020C3139B009835A1 /* DataController.swift */; };
 		30A894EF20C442ED00A80A91 /* NotebookExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A894EE20C442ED00A80A91 /* NotebookExtensions.swift */; };
@@ -59,6 +60,7 @@
 		247F130D20C6F30F00D24497 /* NotebooksListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebooksListPresenter.swift; sourceTree = "<group>"; };
 		247F130F20C6F31E00D24497 /* NotebookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookRepository.swift; sourceTree = "<group>"; };
 		247F131120C6F32C00D24497 /* Notebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notebook.swift; sourceTree = "<group>"; };
+		247F131520C6F3A900D24497 /* CoreDataNotebookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataNotebookRepository.swift; sourceTree = "<group>"; };
 		30802F6E20C306BC009835A1 /* Mooskine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mooskine.xcdatamodel; sourceTree = "<group>"; };
 		30802F7020C3139B009835A1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		30A894EE20C442ED00A80A91 /* NotebookExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookExtensions.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				30A894ED20C442D100A80A91 /* Managed Object Extensions */,
 				30802F6D20C306BC009835A1 /* Mooskine.xcdatamodeld */,
 				30802F7020C3139B009835A1 /* DataController.swift */,
+				247F131520C6F3A900D24497 /* CoreDataNotebookRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				30A894EF20C442ED00A80A91 /* NotebookExtensions.swift in Sources */,
 				247F131020C6F31E00D24497 /* NotebookRepository.swift in Sources */,
 				03B2699F1F2F8AAA00C7433C /* NoteCell.swift in Sources */,
+				247F131620C6F3A900D24497 /* CoreDataNotebookRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
