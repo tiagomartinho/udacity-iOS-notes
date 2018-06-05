@@ -1,11 +1,3 @@
-//
-//  NotebooksListViewController.swift
-//  Mooskine
-//
-//  Created by Josh Svatek on 2017-05-31.
-//  Copyright © 2017 Udacity. All rights reserved.
-//
-
 import UIKit
 import CoreData
 
@@ -96,7 +88,6 @@ class NotebooksListViewController: UIViewController, UITableViewDataSource{
         dataController.viewContext.delete(notebookToDelete)
         try? dataController.viewContext.save()
     }
-    
     
     fileprivate func setupFetchedResultsController() {
         
