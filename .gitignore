@@ -1,2 +1,5 @@
 bugs/
 .DS_STORE
+Mooskine.xcodeproj/project.xcworkspace/xcshareddata/*
+Mooskine.xcodeproj/xcuserdata/
+Mooskine.xcodeproj/project.xcworkspace/xcuserdata*
